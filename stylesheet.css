@@ -1,0 +1,118 @@
+/* #2B2D42       Space Cadet */
+/* #8D99AE         Cool Grey */
+/* #EDF2F4  Anti-Flash White */
+/* #EF233C      Red(Pantone) */
+/* #D90429   Fire Engine Red */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Luckiest+Guy&display=swap');
+
+body {
+    background-color: #8D99AE;
+    margin: 10em;
+}
+
+header h1 {
+    color: #EDF2F4;
+    background-color: #D90429;
+    font-size: 7em;
+    text-align: center;
+    border: #2B2D42 solid 10px;
+    border-radius: 100px 10px 100px 10px;
+    border-width: 25px;
+}
+
+h1, h2, h3 {
+    font-family: Luckiest Guy;
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    font-style: italic;
+}
+
+h1 {
+    color: #EDF2F4;
+    background-color: #D90429;
+}
+
+h2 {
+    color: #EF233C; 
+    background-color: #EDF2F4;
+    border: #2B2D42 solid 10px;
+}
+
+h3 {
+    color: #2B2D42;
+    background-color: #EDF2F4;
+    font-size: 2em;
+}
+
+li h3 {
+    border: #EF233C solid 5px;
+    border-radius: 25px;
+    margin: 1em;
+    margin-left: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 2em;
+}
+
+nav li{
+    font-family: Fira Sans;
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: #2B2D42;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0 1em 1em;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: space-evenly;
+}
+
+nav a:visited {
+    color: #EDF2F4;
+}
+
+nav a:link {
+    color: #8D99AE;
+}
+
+nav a:hover {
+    color: #EF233C;
+}
+
+nav a:active{
+    color: #D90429;
+}
+
+p {
+    color: #2B2D42;
+    background-color: #EDF2F4;
+    font-family: Fira Sans;
+    font-size: 1.5em;
+    border: solid 4px;
+    border-left-color: #EF233C;
+}
+
+p, h1, h2, h3 {
+    padding: 0.2em;
+    margin: 0.5em;
+}
+
+.sectionhead {
+    border-width: 3px 3px 6px 6px;
+    border-color: #2B2D42 #2B2D42 #EF233C #EF233C;
+    border-style: dashed dashed solid solid;
+    border-radius: 5px;
+    margin: 2em 0 0.7em 2em;
+    padding: 0.5em;
+}
