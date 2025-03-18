@@ -1,0 +1,204 @@
+/* #2B2D42       Space Cadet */
+/* #8D99AE         Cool Grey */
+/* #EDF2F4  Anti-Flash White */
+/* #EF233C      Red(Pantone) */
+/* #D90429   Fire Engine Red */
+
+/*  FONT CHANGES:
+    line 35: font-size of h1 tags in the header tag changed to 7em
+    line 43: font-family of h1, h2, and h3 tags changed to "Luckiest Guy" font
+    line 44: font-size of h1, h2, and h3 tags changed to 3em
+    line 45: font-weight of h1, h2, and h3 tags changed to 300
+    line 46: font-style of h1, h2, and h3 tags changed to italic
+    line 47: letter-spacing of h1, h2, and h3 tags changed to 0.05em
+    line 67: font-size of h3 tags changed to 2em
+    line 78: text-decoration of a tags changed to none
+    line 87: font-family of list tags within nav tags changed to Fira Sans
+    line 88: font-size of list tags within nav tags changed to 1.5em
+    line 89: font-weight of list tags within nav tags changed to 700
+    line 121: font-family of p tags changed to Fira Sans
+    line 122: font-size of p tags changed to 1.5em
+    line 137: font-family of footer tags changed to Fira Sans
+    line 147: font-size of list tags within tags with the class of "info" changed to 1.35em
+    line 187: font-family of tags with the class of "reset" change to Fira Sans
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Luckiest+Guy&display=swap');
+
+body {
+    background-color: #8D99AE;
+    margin: 10em;
+}
+
+header h1 {
+    background-color: #D90429;
+    font-size: 7em;
+    text-align: center;
+    border: #2B2D42 solid 10px;
+    border-radius: 100px 10px 100px 10px;
+    border-width: 25px;
+}
+
+h1, h2, h3 {
+    font-family: Luckiest Guy;
+    font-size: 3em;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    color: #EDF2F4;
+    /*changed background color that is consistent across all pages using hex values*/
+    background-color: #D90429;
+}
+
+h2 {
+    color: #EF233C;
+    /*changed background color that is consistent across all pages using rgba*/
+    background-color: rgba(237, 242, 244, 45%);
+    border: #2B2D42 solid 10px;
+}
+
+h3 {
+    color: #2B2D42;
+    /*changed background color that is consistent across all pages using rgb*/
+    background-color: rgb(237, 242, 244);
+    font-size: 2em;
+}
+
+li h3 {
+    border: #EF233C solid 5px;
+    border-radius: 25px;
+    margin: 1em;
+    margin-left: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 2em;
+}
+
+nav li{
+    font-family: Fira Sans;
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: #2B2D42;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0 1em 1em;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: space-evenly;
+}
+
+nav a:visited {
+    color: #EDF2F4;
+}
+
+nav a:link {
+    color: #8D99AE;
+}
+
+nav a:hover {
+    color: #EF233C;
+}
+
+nav a:active{
+    color: #D90429;
+}
+
+p {
+    color: #2B2D42;
+    background-color: #EDF2F4;
+    font-family: Fira Sans;
+    font-size: 1.5em;
+    border: solid 4px;
+    border-left-color: #EF233C;
+}
+
+p, h1, h2, h3 {
+    padding: 0.2em;
+    margin: 0.5em;
+}
+
+img {
+    position: relative;
+}
+
+footer {
+    font-family: Fira Sans;
+}
+
+.info {
+    border: #2B2D42 dotted 10px;
+    list-style-type: square;
+    margin-top: 4em;
+}
+
+.info li {
+    font-size: 1.35em;
+    margin: 1em;
+    border-bottom: #D90429 solid 3px;
+}
+
+.info a:visited {
+    color: #EDF2F4;
+}
+
+.email {
+    border: #2B2D42 solid 5px;
+    margin-top: 3em;
+}
+
+.info a:active, .email a:link {
+    color: #D90429;
+}
+
+.email a:active {
+    color: #8D99AE;
+}
+
+.email a:visited, .info a:link {
+    color: #2B2D42;
+}
+
+.sectionhead {
+    border-width: 3px 3px 6px 6px;
+    border-color: #2B2D42 #2B2D42 #EF233C #EF233C;
+    border-style: dashed dashed solid solid;
+    border-radius: 5px;
+    margin: 2em 0 0.7em 2em;
+    padding: 0.5em;
+}
+
+.important {
+    background-color: #8D99AE;
+}
+
+.reset {
+    font-family: Fira Sans;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    position: fixed;
+    margin: -6em 0 0 -6em;
+    background-color: #2B2D42;
+    border-radius: 10px;
+    border-left: none;
+}
+
+.reset a:link, .reset a:visited {
+    color: #8D99AE;
+}
+
+.reset a:active{
+    color: #D90429;
+}
